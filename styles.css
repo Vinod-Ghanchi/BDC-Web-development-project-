@@ -1,0 +1,29 @@
+
+body{
+  padding-top: 10px;
+
+}
+.main{
+  padding:15px;
+background-color: bf0a07;
+  margin: 10px;
+}
+
+.navbar{
+  background-color: ffffff;
+  padding-bottom: 10px;
+}
+
+.navbar-brand{
+  padding-left: 5px;
+}
+
+
+
+.form-group{
+  padding:10px;
+}
+
+.nurse-table{
+  padding:50px;
+}
