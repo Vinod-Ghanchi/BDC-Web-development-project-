@@ -25,5 +25,5 @@ if($result){
 else{
     echo "Error encountered while creating table".mysqli_connect_error();
 }
-
+ 
 ?>
