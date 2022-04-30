@@ -21,6 +21,6 @@ if($result){
 }
 else{
     echo "Error encountered while creating database".mysqli_connect_error();
-}
+} 
     
 ?>
