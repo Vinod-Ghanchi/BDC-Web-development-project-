@@ -46,7 +46,9 @@
       <li class="nav-item">
         <a class="nav-link" href="volunteerdetails.php">Volunteer</a>
       </li>
-
+      <li class="nav-item">
+        <a class="nav-link" href="certificate.php">Certificate</a>
+      </li>
     </ul>
   </div>
 </nav>
