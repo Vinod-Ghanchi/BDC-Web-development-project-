@@ -85,10 +85,10 @@ padding: 10px;
 
     <div class="container main rounded">
     <h1 align="center" class="title" >Certificate Page</h1>
-    </div>
+    
 
 
-    <div class="container donor">
+    
     <form  method="post">
       <div class="form-row">
         <div class="form-group col-md-6">
@@ -98,12 +98,12 @@ padding: 10px;
           <input type="number" class="form-control" name="donated" placeholder="amount of blood donated"><br><br>
           <label for="bloodgrp">Bloodgrpoup</label>
           <input type="text" class="form-control" name="bloodgrp" placeholder="Enter blood group"><br><br>
-          <input type="submit" name="submit" class="btn btn-primary" value="Generate certificate" >
+          <input type="submit" name="submit" class="btn btn-primary" value="Generate Certificate" >
         </div>
     </form>
     </div>
     
-<footer class="page-footer font-small blue pt-4">
+    <footer class="page-footer font-small blue pt-4" id="footer">
 
 <!-- Footer Links -->
 <div class="container-fluid text-center text-md-left">
@@ -131,10 +131,13 @@ padding: 10px;
 
       <ul class="list-unstyled">
         <li>
-          <a href="#!">Instagram</a>
+          <a href="https://instagram.com/rohan_dsouza_02?igshid=YmMyMTA2M2Y=" target="_blank">Instagram</a>
         </li>
         <li>
-          <a href="#!">Phone Number</a>
+          <a href="tel:+919082385263">Phone Number</a>
+        </li>
+        <li>
+          <a href="">Github</a>
         </li>
       </ul>
 
@@ -149,16 +152,13 @@ padding: 10px;
 
       <ul class="list-unstyled">
         <li>
-          <a href="#!">Instagram</a>
+          <a href="https://instagram.com/vinod_ghanchi?igshid=YmMyMTA2M2Y=" target="_blank">Instagram</a>
         </li>
         <li>
-          <a href="#!">Phone Number</a>
+          <a href="tel:+919372222626">Phone Number</a>
         </li>
         <li>
-          <a href="#!">Link 3</a>
-        </li>
-        <li>
-          <a href="#!">Link 4</a>
+          <a href="https://github.com/Vinod-Ghanchi" target="_blank">Github</a>
         </li>
       </ul>
 
@@ -171,16 +171,13 @@ padding: 10px;
 
       <ul class="list-unstyled">
         <li>
-          <a href="#!">Instagram</a>
+          <a href="https://instagram.com/iyerkaushik?igshid=YmMyMTA2M2Y=" target="_blank">Instagram</a>
         </li>
         <li>
-          <a href="#!">Phone Number</a>
+          <a href="tel:+917045029282">Phone Number</a>
         </li>
         <li>
-          <a href="#!">Link 3</a>
-        </li>
-        <li>
-          <a href="#!">Link 4</a>
+          <a href="https://github.com/Kaushik-Iyer">Github</a>
         </li>
       </ul>
 
@@ -198,5 +195,7 @@ padding: 10px;
 <!-- Copyright -->
 
 </footer>
+<!-- Footer -->
+  <button class="myBtn"><a href="#top" style="color: Black">Top</a></button>
   </body>
 </html> 
