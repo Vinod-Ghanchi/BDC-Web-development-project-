@@ -1,48 +1,27 @@
 <?php
-    if ($_SERVER['REQUEST_METHOD'] == 'POST')
-    {
-        $dn = $_POST['donorname'];
-        $conn = mysqli_connect ('localhost', 'root', '', 'BDC');
-        
-        require('fpdf.php');
-        if(isset($_POST['submit']))
-        {
-            $query = "SELECT `dname`, `donated`,`bloodgrp` FROM donor WHERE (dname = '$dn' )";
 
-            $result = mysqli_query ($conn,$query);
-            if (mysqli_num_rows($result) == 1) 
-            {
-                $row = $result->fetch_assoc();
-                $font = "opensans.ttf";
-                $image = imagecreatefromjpeg("certificate.jpg");
-                $color = imagecolorallocate($image,19,21,22);
-                $name = $row['dname'];
-                $ml = $row['donated'];
-                $type = $row['bloodgrp'];
-                $donated = $ml." ml ".$type." blood ";
-                $to = "KJ Blood Donation centre";
-                $date = "09 APRIL 2022";
-                $signature = "KJSCE";
-                imagettftext($image,20,0,306,167,$color,$font,$name);
-                imagettftext($image,15,0,272,267,$color,$font,$donated);
-                imagettftext($image,15,0,261,325,$color,$font,$to);
-                imagettftext($image,15,0,105,360,$color,$font,$date);
-                imagettftext($image,15,0,406,360,$color,$font,$signature);
-                imagejpeg($image,"certificates/".$name.".jpg");
-                $pdf = new FPDF('L','in',[11.7,8.27]);
-                $pdf-> AddPage();
-                $pdf-> Image("certificates/".$name.".jpg",0,0,11.7,8.27);
-                $pdf-> Output("certificates/".$name.".pdf","F");
-                imagedestroy($image);
-                echo "Certificate created"."<br>";  
-            }
-            else{
-                echo "Data Not found in database!!";
-            }
-        }
-    }
+// compares values entered in login page form with mySQL database, and then directs either to protected page or to a failure page
+if ($_SERVER['REQUEST_METHOD'] == 'POST')
+{
+    $dn = $_POST['donorname'];
+// $pw = trim($_POST['password']);
+
+    $link = mysqli_connect ('localhost', 'root', '', 'BDC');
+
+
+
+// if $fn and $pw match a record, then display page, else display failure page
+
+$query = "SELECT dname FROM donor WHERE (dname = '$dn')";
+
+$result = mysqli_query ($link,$query);
+if (mysqli_num_rows($result) == 1) {
+print 'Good to go' ;
+} else {
+print 'Sorry, this login is invalid' ;
+}
+}
 ?>
-
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
