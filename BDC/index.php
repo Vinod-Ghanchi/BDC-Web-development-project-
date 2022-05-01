@@ -22,7 +22,7 @@
      <h1  align="center" class=" title">Blood Donation Centre</h1>
 
      <nav class="navbar navbar-expand-lg navbar-light bg-light rounded">
-  <a class="navbar-brand" href="#">BDC</a>
+  <a class="navbar-brand" href="index.php">BDC</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -32,13 +32,13 @@
         <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Learn More</a>
+        <a class="nav-link" href="#learnmore">Learn More</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#footer">Contact Us</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="donorinsert.php">Donate</a>
+        <a class="nav-link" target="_blank" href="donorinsert.php">Donate</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="nursedetails.php">Nurses</a>
@@ -97,7 +97,7 @@
 
 <div class="b-example-divider"></div>
 
-<div class="px-4 py-5 my-5 text-center">
+<div class="px-4 py-5 my-5 text-center" id="learnmore">
     <h1 class="display-5 fw-bold">Why Your Donation Matters</h1>
     <div class="col-lg-9 mx-auto">
       <p class="lead mb-9">There are no substitutes for blood, platelets or plasma—they cannot be manufactured. Patients in need of blood or blood products must rely on donations from people like you. Those who are hesitant about donating blood for the first time often find that the donation process is easy and that saving lives is deeply gratifying.</p>
@@ -118,7 +118,7 @@
 
 
 
-<footer class="page-footer font-small blue pt-4">
+<footer class="page-footer font-small blue pt-4" id="footer">
 
   <!-- Footer Links -->
   <div class="container-fluid text-center text-md-left">
@@ -146,7 +146,7 @@
 
         <ul class="list-unstyled">
           <li>
-            <a href="#!">Instagram</a>
+            <a href="https://instagram.com/rohan_dsouza_02?igshid=YmMyMTA2M2Y=" target="_blank">Instagram</a>
           </li>
           <li>
             <a href="#!">Phone Number</a>
@@ -164,16 +164,13 @@
 
         <ul class="list-unstyled">
           <li>
-            <a href="#!">Instagram</a>
+            <a href="https://instagram.com/vinod_ghanchi?igshid=YmMyMTA2M2Y=" target="_blank">Instagram</a>
           </li>
           <li>
-            <a href="#!">Phone Number</a>
+            <a href="tel:+919372222626">Phone Number</a>
           </li>
           <li>
-            <a href="#!">Link 3</a>
-          </li>
-          <li>
-            <a href="#!">Link 4</a>
+            <a href="https://github.com/Vinod-Ghanchi" target="_blank">Github</a>
           </li>
         </ul>
 
@@ -186,16 +183,13 @@
 
         <ul class="list-unstyled">
           <li>
-            <a href="#!">Instagram</a>
+            <a href="https://instagram.com/iyerkaushik?igshid=YmMyMTA2M2Y=" target="_blank">Instagram</a>
           </li>
           <li>
-            <a href="#!">Phone Number</a>
+            <a href="tel:+917045029282">Phone Number</a>
           </li>
           <li>
-            <a href="#!">Link 3</a>
-          </li>
-          <li>
-            <a href="#!">Link 4</a>
+            <a href="https://github.com/Kaushik-Iyer">Github</a>
           </li>
         </ul>
 
@@ -214,8 +208,8 @@
 
 </footer>
 <!-- Footer -->
-
+    <button class="myBtn"><a href="#top" style="color: Black">Top</a></button>
    </div>
 
-
  </body>
+</html>
