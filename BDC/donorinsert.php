@@ -1,4 +1,3 @@
-
 <?php
       if ($_SERVER['REQUEST_METHOD'] == 'POST'){
           $inputDID=$_POST['inputDID'];
@@ -89,12 +88,45 @@ padding: 10px;
 }
 </style>
   </head>
-  <body>
+  <body bgcolor="#f70400">
+  <div class="container main rounded" >
+  <h1  align="center" class=" title">Blood Donation Centre</h1>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light rounded">
+  <a class="navbar-brand" href="#">BDC</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#learnmore">Learn More</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#footer">Contact Us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" target="_blank" href="donorinsert.php">Donate</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="nursedetails.php">Nurses</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="volunteerdetails.php">Volunteer</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="certificate.php">Certificate</a>
+      </li>
 
+    </ul>
+  </div>
+</nav>
 
+<h2 align="center" class=" title">Donor Entry Form</h2>
 
-
-    <div class="container donor">
+    <div class="container main rounded">
     <form action="donorinsert.php" method="post">
       <div class="form-row">
         <div class="form-group col-md-6">
@@ -139,14 +171,15 @@ padding: 10px;
         </div>
       <div class="form-group ">
         <label for="inputAddress">Address</label>
-        <input type="text" class="form-control" name="inputAddress" placeholder="1234 Main St">
+        <input type="text" class="form-control" name="inputAddress" placeholder="1234 Main St"><br><br>
         <button type="submit" class="btn btn-primary"  >Sign in</button>
       </div>
 
     </form>
     </div>
     
-<footer class="page-footer font-small blue pt-4">
+
+    <footer class="page-footer font-small blue pt-4" id="footer">
 
 <!-- Footer Links -->
 <div class="container-fluid text-center text-md-left">
@@ -174,10 +207,13 @@ padding: 10px;
 
       <ul class="list-unstyled">
         <li>
-          <a href="#!">Instagram</a>
+          <a href="https://instagram.com/rohan_dsouza_02?igshid=YmMyMTA2M2Y=" target="_blank">Instagram</a>
         </li>
         <li>
-          <a href="#!">Phone Number</a>
+          <a href="tel:+919082385263">Phone Number</a>
+        </li>
+        <li>
+          <a href="">Github</a>
         </li>
       </ul>
 
@@ -192,16 +228,13 @@ padding: 10px;
 
       <ul class="list-unstyled">
         <li>
-          <a href="#!">Instagram</a>
+          <a href="https://instagram.com/vinod_ghanchi?igshid=YmMyMTA2M2Y=" target="_blank">Instagram</a>
         </li>
         <li>
-          <a href="#!">Phone Number</a>
+          <a href="tel:+919372222626">Phone Number</a>
         </li>
         <li>
-          <a href="#!">Link 3</a>
-        </li>
-        <li>
-          <a href="#!">Link 4</a>
+          <a href="https://github.com/Vinod-Ghanchi" target="_blank">Github</a>
         </li>
       </ul>
 
@@ -214,16 +247,13 @@ padding: 10px;
 
       <ul class="list-unstyled">
         <li>
-          <a href="#!">Instagram</a>
+          <a href="https://instagram.com/iyerkaushik?igshid=YmMyMTA2M2Y=" target="_blank">Instagram</a>
         </li>
         <li>
-          <a href="#!">Phone Number</a>
+          <a href="tel:+917045029282">Phone Number</a>
         </li>
         <li>
-          <a href="#!">Link 3</a>
-        </li>
-        <li>
-          <a href="#!">Link 4</a>
+          <a href="https://github.com/Kaushik-Iyer">Github</a>
         </li>
       </ul>
 
@@ -241,5 +271,8 @@ padding: 10px;
 <!-- Copyright -->
 
 </footer>
+<!-- Footer -->
+  <button class="myBtn"><a href="#top" style="color: Black">Top</a></button>
+  </div>
   </body>
 </html>
