@@ -1,5 +1,5 @@
 <?php
-
+    require('fpdf.php');
     if(isset($_POST['submit']))
     {
         
@@ -19,6 +19,10 @@
       imagettftext($image,15,0,105,360,$color,$font,$date);
       imagettftext($image,15,0,406,360,$color,$font,$signature);
       imagejpeg($image,"certificates/".$name.".jpg");
+      $pdf = new FPDF('L','in',[11.7,8.27]);
+      $pdf-> AddPage();
+      $pdf-> Image("certificates/".$name.".jpg",0,0,11.7,8.27);
+      $pdf-> Output("certificates/".$name.".pdf","F");
       imagedestroy($image);
       echo "Certificate created"."<br>";  
     }
@@ -78,7 +82,7 @@ padding: 10px;
           <label for="donated">Donated </label>
           <input type="number" class="form-control" name="donated" placeholder="amount of blood donated"><br><br>
           <label for="bloodgrp">Bloodgrpoup</label>
-          <input type="submit" class="form-control" name="bloodgrp" placeholder="Enter blood group"><br><br>
+          <input type="text" class="form-control" name="bloodgrp" placeholder="Enter blood group"><br><br>
           <input type="submit" name="submit" class="btn btn-primary" value="Generate certificate" >
         </div>
     </form>
