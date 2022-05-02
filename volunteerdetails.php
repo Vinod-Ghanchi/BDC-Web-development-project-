@@ -24,9 +24,9 @@ $result=mysqli_query($conn,$sql);
 
 ?>
 <h2>Volunteer details</h2>
-<table align="center" border="1px" style="width:600px; line-height:40px;">
+<table align="center" border="1px"  class='table'>
 	<tr>
-		<th colspan="4"><h2>Volunteer Records</h2></th>
+		<th colspan="4"><h2 style="text-align:center; margin-left:60px;">Volunteer Records</h2></th>
 		</tr>
 			  <th> V-ID </th>
 			  <th> Name </th>

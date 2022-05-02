@@ -1,29 +1,71 @@
 
 body{
-  padding-top: 10px;
+    padding-top: 10px;
 
+  }
+  .main{
+    padding:15px;
+  background-color: bf0a07;
+    margin: 10px;
+  }
+
+  .navbar{
+    background-color: ffffff;
+    padding-bottom: 10px;
+  }
+
+  .navbar-brand{
+    padding-left: 5px;
+  }
+
+
+
+  .form-group{
+    padding:10px;
+  }
+
+  .nurse-table{
+    padding:50px;
+  }
+
+  .myBtn {
+    position: fixed;
+    bottom: 10px;
+    float: right;
+    right: 18.5%;
+    left: 77.25%;
+    max-width: 30px;
+    width: 100%;
+    font-size: 12px;
+    border-color: rgba(85, 85, 85, 0.2);
+    background-color: rgb(255,255, 255);
+    padding: .5px;
+    border-radius: 4px;
 }
-.main{
-  padding:15px;
-background-color: bf0a07;
-  margin: 10px;
+.myBtn:hover {
+  background-color: #7dbbf1;
 }
 
-.navbar{
-  background-color: ffffff;
-  padding-bottom: 10px;
+a:link {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
 }
 
-.navbar-brand{
-  padding-left: 5px;
+a:visited {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
 }
 
-
-
-.form-group{
-  padding:10px;
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
 }
 
-.nurse-table{
-  padding:50px;
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
 }
