@@ -15,7 +15,7 @@ else
     echo " database connected successfully <br> ";
 }
 // create table
-$sql = "CREATE TABLE `bdc`.`donor` ( `DID` INT UNSIGNED NOT NULL , `dname` VARCHAR(100) NOT NULL , `daadhar` BIGINT(8) NOT NULL , `dphone` BIGINT NOT NULL , `bloodgrp` VARCHAR(5) NOT NULL , `dgender` VARCHAR(6) NOT NULL , `dage` INT NOT NULL , `daddress` VARCHAR(100) NOT NULL , `weight` INT NOT NULL , `height` INT NOT NULL , `donated` FLOAT NOT NULL , PRIMARY KEY (`DID`), UNIQUE (`dname`), UNIQUE (`daadhar`), UNIQUE (`dphone`)) ENGINE = InnoDB";
+$sql = "CREATE TABLE `bdc`.`donor` ( `DID` INT UNSIGNED NOT NULL , `dname` VARCHAR(100) NOT NULL , `daadhar` BIGINT(8) NOT NULL , `dphone` BIGINT NOT NULL , `bloodgrp` VARCHAR(5) NOT NULL , `dgender` VARCHAR(6) NOT NULL , `dage` INT NOT NULL , `daddress` VARCHAR(100) NOT NULL , `weight` INT NOT NULL , `height` INT NOT NULL , `donated` FLOAT NOT NULL ,`date` DATE NOT NULL DEFAULT CURRENT_TIMESTAMP, PRIMARY KEY (`DID`), UNIQUE (`dname`), UNIQUE (`daadhar`), UNIQUE (`dphone`)) ENGINE = InnoDB";
  
 
 $result= mysqli_query($conn,$sql);
