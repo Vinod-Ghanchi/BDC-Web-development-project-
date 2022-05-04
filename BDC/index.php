@@ -149,7 +149,10 @@
             <a href="https://instagram.com/rohan_dsouza_02?igshid=YmMyMTA2M2Y=" target="_blank">Instagram</a>
           </li>
           <li>
-            <a href="#!">Phone Number</a>
+            <a href="tel:+919082385263">Phone Number</a>
+          </li>
+          <li>
+            <a href="https://github.com/RohanDsouza9602">Github</a>
           </li>
         </ul>
 
