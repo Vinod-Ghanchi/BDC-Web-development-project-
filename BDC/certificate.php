@@ -7,7 +7,7 @@
         require('fpdf.php');
         if(isset($_POST['submit']))
         {
-            $query = "SELECT `dname`, `donated`,`bloodgrp` FROM donor WHERE (dname = '$dn' )";
+            $query = "SELECT `dname`, `donated`,`bloodgrp`,`date` FROM donor WHERE (dname = '$dn' )";
 
             $result = mysqli_query ($conn,$query);
             if (mysqli_num_rows($result) == 1) 
