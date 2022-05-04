@@ -21,7 +21,7 @@
                 $type = $row['bloodgrp'];
                 $donated = $ml." ml ".$type." blood ";
                 $to = "KJ Blood Donation centre";
-                $date = "09 APRIL 2022";
+                $date = $row["date"];
                 $signature = "KJSCE";
                 imagettftext($image,20,0,306,167,$color,$font,$name);
                 imagettftext($image,15,0,272,267,$color,$font,$donated);
